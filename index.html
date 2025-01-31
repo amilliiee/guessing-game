@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Guess The Word Game | devChallenges.io</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="game-title">Word Scramblle</div>
+
+      <div class="scrambled-word"></div>
+
+      <div class="tracking">
+        <div class="tries">
+          Tries(1/5):
+          <div class="track-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="mistakes">
+          Mistakes:
+          <div class="guesses"></div>
+        </div>
+      </div>
+
+      <div class="answer-boxes"></div>
+
+      <div class="button-options">
+        <button id="random">Random</button>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
