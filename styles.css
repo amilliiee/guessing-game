@@ -60,9 +60,16 @@ body {
     background-color: var(--mid-gray);
     border-radius: 5px;
     box-shadow: 0 4px var(--near-black);
+    padding: 12px 0;
+    color: var(--near-white);
+    font-size: 2rem;
+    font-weight: var(--fw-med);
+    letter-spacing: 0.85rem;
+    text-align: center;
+    display: inline-block;
 }
 
-.tracking {
+.stats {
     display: flex;
     flex-direction: row;
     font-size: 0.875rem;
@@ -70,31 +77,61 @@ body {
     color: var(--near-white);
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 52px;
+    margin-bottom: 28px;
 }
 
-.tries {
+.attempts {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.track-dots {
+.dot-container {
     display: flex;
-    flex-direction: row;
     gap: 6px;
 }
 
-.dot {
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    background-color: var(--dot-color);
+i {
+    font-size: 0.375rem;
+    color: var(--dot-color);
 }
 
 .answer-boxes {
-    margin-bottom: 52px;
+    margin-bottom: 28px;
+    display: flex;
+    gap: 6px;
 }
+
+.answer-box {
+    height: 2.75rem;
+    width: 2.75rem;
+    border: 2px solid var(--mid-gray);
+    border-radius: 8px;
+    caret-color: transparent;
+    background-color: transparent;
+    position: relative;
+    text-align: center;
+    font-size: 1.25rem;
+    color: var(--near-white);
+    /* line-height: 2.75rem; */
+}
+
+.answer-box:focus {
+    border-color: #7B248A;
+    outline: none;
+}
+
+/* .answer-box::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1rem;
+    height: 2px;
+    background-color: var(--near-white);
+    pointer-events: none;
+} */
 
 .button-options {
     display: flex;
@@ -112,4 +149,60 @@ button {
     color: var(--near-white);
     background-color: var(--light-purp);
     box-shadow: 0 4px var(--dark-purp);
+}
+
+/*
+BELOW IS SIMPLY FOR CHALLENGE COMPARISON
+*/
+
+#try-dot {
+    color: var(--blurple);
+}
+
+#ab1, #ab2, #ab3, #ab4 {
+    font-size: 1.25rem;
+}
+
+#ab5 {
+    border-color: #7B248A;
+}
+
+#ab1::after {
+    content: 'f';
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#ab2::after {
+    content: 'l';
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#ab3::after {
+    content: 'o';
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#ab4::after {
+    content: 'w';
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#ab5::after {
+    content: '_';
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
 }
