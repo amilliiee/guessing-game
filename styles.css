@@ -155,12 +155,9 @@ button {
 BELOW IS SIMPLY FOR CHALLENGE COMPARISON
 */
 
-#ab1, #ab2, #ab3, #ab4 {
-    font-size: 1.25rem;
-}
-
 #ab1 {
     border-color: #7B248A;
+    font-size: 1.25rem;
 }
 
 #ab1::after {
