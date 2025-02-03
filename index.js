@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // BELOW: SIMPLY FOR CHALLENGE COMPARISON
     const scrambledWord = 'relowf';
-    let mistakes = ['a', 'e', 'w', 't'];
+    let mistakes = ['0'];
     mistakesDiv.textContent = mistakes.join(', ');
-    triesSpan.textContent = '(4/5):';
+    triesSpan.textContent = '(0/5):';
     //
 
     scrambledWordDiv.textContent = scrambledWord;

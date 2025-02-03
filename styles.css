@@ -155,51 +155,15 @@ button {
 BELOW IS SIMPLY FOR CHALLENGE COMPARISON
 */
 
-#try-dot {
-    color: var(--blurple);
-}
-
 #ab1, #ab2, #ab3, #ab4 {
     font-size: 1.25rem;
 }
 
-#ab5 {
+#ab1 {
     border-color: #7B248A;
 }
 
 #ab1::after {
-    content: 'f';
-    position: absolute;
-    bottom: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#ab2::after {
-    content: 'l';
-    position: absolute;
-    bottom: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#ab3::after {
-    content: 'o';
-    position: absolute;
-    bottom: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#ab4::after {
-    content: 'w';
-    position: absolute;
-    bottom: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#ab5::after {
     content: '_';
     position: absolute;
     bottom: 8px;
